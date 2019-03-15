@@ -21,6 +21,7 @@ public class Picture {
     private Triangle roof;
     private Circle sun;
     private Circle sun2;
+    private boolean terreEstFixe =true;
 
     /**
      * Constructor for objects of class Picture
@@ -98,7 +99,11 @@ public class Picture {
      */
     
     public void coucherSoleil(){
-         sun.slowMoveVertical(250);
+        if(terreEstFixe)
+        {
+            sun.slowMoveVertical(250);
+        }
+         
         }
 
 
